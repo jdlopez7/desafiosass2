@@ -1,0 +1,306 @@
+    @import "reset";
+    @import "header";
+    @import "variables";
+    
+    
+
+    /* Inicio Index */
+    /* Inicio Sección Paralax*/
+    
+    #imagen-fondo {
+        background-image: url("../img/fondo-de-pantalla-web-jdlc-opt.jpg"); height: 600px;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .textos {
+            padding-top: 15rem;
+        }
+
+        h1 {
+            padding-top: 10rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            line-height: 1.2em;
+        }
+
+        .titulos {
+            color: $color-blanco;
+            text-align: center;
+            font-family: Poppins;
+        }
+
+        .tituloH2Portada {
+            font-size: 3.2rem;
+            font-weight: 500;
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .titulosH4 {
+            font-size: 2rem;
+            line-height: 1.6;
+            font-family: "Poppins";
+            font-weight: 200;
+            text-align: center;
+            margin-top: 1rem;
+            letter-spacing: 0.05em;
+        }
+    
+    }
+
+    /* Fin Sección Paralax*/
+    /* Inicio Sección Ventajas*/
+    
+    #ventajas {
+        font-size: 1.8rem;
+        font-family: "Poppins";
+        letter-spacing: 0.05em;
+        color: #047798;
+        line-height: 1.4em;
+        text-align: center;
+        background-color: $color-fondo;
+        border-radius: 20px;
+
+        .ventajas1 {
+            background-color: $color-blanco;
+            margin: 40px 15px 40px 15px;
+            border-radius: 20px;
+        }
+
+        .imagenVentajas {
+            margin: 30px 15px 0px 15px;
+            border-radius: 20px;
+            
+        }
+
+        .ventajastexto {
+            font-size: 1.7rem;
+            color: $color-fuente-gris;
+            margin: 30px 20px 30px 20px;
+            letter-spacing: 0.05em;
+            font-family: Poppins;
+            line-height: 1.5em;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+    }
+
+    /* Fin Sección Ventajas*/
+    
+    
+    @import "footer";
+    
+    
+    /* Media Queries para pantallas SM max 768px */
+    
+    @media only screen and (min-width: 0px) and (max-width: 768px) {
+    
+        /* index */
+        
+        .textos {
+            width: 90% !important;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .logoMenu {
+            max-width: 50%;
+        }
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        h2 {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+    
+        .titulosH4 {
+            font-size: 0.8rem;
+            line-height: 1.2;
+        }
+    
+        .ventajas1 {
+            margin: 40px 15px 0px 15px;
+        }
+    
+        #ventajas {
+            padding-bottom: 40px;
+        }
+    
+        /* Footer */
+    
+        .columnas {
+                grid-template-columns: 100%;
+                display: grid;
+                grid-template-areas:
+                    "columna1Footer"
+                    "columna2Footer1"
+                    "columna2Footer"
+                    "columna3Footer";
+          }
+        
+        .navbar-light .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2804, 119, 152, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+          }
+        
+        .navbar-light .navbar-toggler {
+            border-color: $color-azul;
+          }
+        #menu a, button{
+            font-size: 18px !important;
+             font-weight: 600;
+             padding-left: 10px;
+          }
+    
+        .columna1Footer__logo {
+            margin-bottom: -20px;
+            max-width: 125px;
+        }
+    
+        .columna1Footer__mision {
+            font-size: 1.5rem;
+            line-height: 1.4em;
+            text-align: center;
+            padding: 20px 60px 0px 60px;
+        }
+    
+        }
+    /* Fin Media Queries para pantallas SM max 768 */
+    
+    /* Inicio Media Queries para pantallas desde 1024px a 2400px */
+    
+    @media only screen and (min-width: 1024px) and (max-width: 2400px) {
+        #ventajas {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+        }
+
+        .titulosH4 {
+            font-size: 2rem;
+            line-height: 1.2;
+        }
+        .col-md-4 {
+            width: 100%;
+        }
+        .container {
+            max-width: 100%;
+        }
+    
+        .ventajas1 {
+            height: 250px;
+        }
+    
+        .columnas {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 15px;
+        }
+    
+    }
+    
+    /* Inicio Media Queries para pantallas medias entre 768px y 1024px */
+    
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+        .ventajas1 {
+            height: 270px;
+        }
+    
+        .columna1Footer__logo {
+            margin-bottom: -20px;
+            max-width: 125px;
+        }
+        
+        #ventajas {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+        }
+        .container {
+            max-width: 100%;
+        }
+
+        .navbar-light .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2804, 119, 152, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+          }
+        
+        .navbar-light .navbar-toggler {
+            border-color: $color-azul;
+          }
+    }
+ 
+    /* Fin Index */
+
+    /* Inicio Página Sobre Mi */
+
+        /* Título */
+        
+        .tituloSobreMi {
+            width: 100%;
+            margin-top: 1rem;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            .titulosH2 {
+                font-size: 3.5rem;
+                font-family: "Poppins";
+                font-weight: 700;
+                padding: 0 0 1em 0;
+                text-align: center;
+                color: $color-azul;
+                letter-spacing: 0.04em;
+            }
+        }
+
+         /* Fin Título */
+
+         /* Inicio Contenido */
+
+    .sobremi {
+        background-color: $color-fondo;
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding-top: 3rem;
+        .sobremicaja {
+            font-size: 1.8rem;
+            font-family: "Poppins";
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            color: $color-fuente-gris;
+            line-height: 1.4em;
+            display: flex;
+            margin: 2rem;
+            background-color: $color-blanco;
+            border-radius: 20px;
+        }
+        .textoSobremi {
+            padding: 30px;
+            margin-top: 1rem;
+        }
+        .textoSobremipadding p{
+            padding: 0px 10px 20px 0px;
+        }
+        .imagenMargen {
+            margin: 2rem 0;
+            .imagenJuan {
+                border-radius: 20px;
+            }
+        }
+    }
+    
+    /* Fin Contenido */
+
+    /* Fin página Sobre Mi */
+   
+    
+    
+    
+   
