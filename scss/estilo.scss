@@ -348,14 +348,232 @@
     }
     /* Fin página Servicios */
 
-   
+    /* Inicio página Precios */
+
+    #servicios {
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #f7f9fc;
+        .servicios1 {
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px;
+            padding: 15px 25px 15px 25px;
+            border-radius: 20px;
+            .PreciosConsultaIndividual {
+                border: #777777 2px solid;
+                height: 600px;
+                background-color: white;
+                margin-top: 40px;
+                .serviciosTitulo {
+                    font-size: 16px;
+                    max-width: 300px;
+                    margin: 30px 20px 30px 20px;
+                    color: #047798;
+                    letter-spacing: 0.05em;
+                    font-family: poppins;
+                    line-height: 1.5em;
+                    text-align: center;
+                }
+                .precio {
+                    font-size: 50px;
+                    max-width: 300px;
+                    margin: 20px 20px 20px 20px;
+                    color: #ce0054;
+                    font-family: poppins;
+                    line-height: 1.5em;
+                    text-align: center;
+                    font-weight: 400;
+                }
+                .preciosTexto {
+                    width: 200px;
+                    font-size: 1.7em;
+                    color: #666666;
+                    margin: 30px 20px 30px 40px;
+                    letter-spacing: 0.05em;
+                    font-family: Poppins;
+                    line-height: 1.5em;
+                }
+                .botonPrecios1 {
+                    text-align: center;
+                    .botonPrecios {
+                        text-align: center;
+                        background: #047798;
+                        border: none;
+                        padding: 12px;
+                        color: white;
+                        margin: 16px 0;
+                        font-size: 20px;
+                        font-weight: 600;
+                        border-radius: 20px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                      }
+                }
+            .PreciosConsultaIndividual {
+                    border: #777777 2px solid;
+                    height: 600px;
+                    margin-top: 40px;
+                    background-color: #7ddde3;
+                    .serviciosTitulo {
+                        font-size: 16px;
+                        max-width: 300px;
+                        margin: 30px 20px 30px 20px;
+                        color: #047798;
+                        letter-spacing: 0.05em;
+                        font-family: poppins;
+                        line-height: 1.5em;
+                        text-align: center;
+                    }
+                    .precio {
+                        font-size: 50px;
+                        max-width: 300px;
+                        margin: 20px 20px 20px 20px;
+                        color: #ce0054;
+                        font-family: poppins;
+                        line-height: 1.5em;
+                        text-align: center;
+                        font-weight: 400;
+                        .precioAnterior {
+                            font-size: 20px;
+                            max-width: 300px;
+                            color: #ce0054;
+                            letter-spacing: 0.05em;
+                            font-family: poppins;
+                            line-height: 1.5em;
+                            text-align: center;
+                            font-weight: 400;
+                            text-decoration: line-through;
+                        }
+                        .precio {
+                            font-size: 50px;
+                            max-width: 300px;
+                            margin: 20px 20px 20px 20px;
+                            color: #ce0054;
+                            font-family: poppins;
+                            line-height: 1.5em;
+                            text-align: center;
+                            font-weight: 400;
+                        }
+                    }
+                    .preciosTexto {
+                        width: 200px;
+                        font-size: 1.7em;
+                        color: #666666;
+                        margin: 30px 20px 30px 40px;
+                        letter-spacing: 0.05em;
+                        font-family: Poppins;
+                        line-height: 1.5em;
+                    }
+                    .botonPrecios1 {
+                        text-align: center;
+                        .botonPrecios {
+                            text-align: center;
+                            background: #047798;
+                            border: none;
+                            padding: 12px;
+                            color: white;
+                            margin: 16px 0;
+                            font-size: 20px;
+                            font-weight: 600;
+                            border-radius: 20px;
+                            text-transform: uppercase;
+                            letter-spacing: 0.1em;
+                          }
+                    }
+                     
+                }
+
+            }
+
+            .PreciosConsultaIndividual {
+                border: #777777 2px solid;
+                height: 600px;
+                background-color: white;
+                margin-top: 40px;
+                .serviciosTitulo {
+                    font-size: 16px;
+                    max-width: 300px;
+                    margin: 30px 20px 30px 20px;
+                    color: #047798;
+                    letter-spacing: 0.05em;
+                    font-family: poppins;
+                    line-height: 1.5em;
+                    text-align: center;
+                }
+                .precio {
+                    font-size: 50px;
+                    max-width: 300px;
+                    margin: 20px 20px 20px 20px;
+                    color: #ce0054;
+                    font-family: poppins;
+                    line-height: 1.5em;
+                    text-align: center;
+                    font-weight: 400;
+                }
+                .preciosTexto {
+                    width: 200px;
+                    font-size: 1.7em;
+                    color: #666666;
+                    margin: 30px 20px 30px 40px;
+                    letter-spacing: 0.05em;
+                    font-family: Poppins;
+                    line-height: 1.5em;
+                }
+                .botonPrecios1 {
+                    text-align: center;
+                    .botonPrecios {
+                        text-align: center;
+                        background: #047798;
+                        border: none;
+                        padding: 12px;
+                        color: white;
+                        margin: 16px 0;
+                        font-size: 20px;
+                        font-weight: 600;
+                        border-radius: 20px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                      }
+                }
+            }
+
+    .resaltar {
+        background-color: #7ddde3;
+        .precioAnterior {
+            font-size: 20px;
+            max-width: 300px;
+            color: #ce0054;
+            letter-spacing: 0.05em;
+            font-family: poppins;
+            line-height: 1.5em;
+            text-align: center;
+            font-weight: 400;
+            text-decoration: line-through;
+        }
+    }
+    
+    .fondoBlanco:hover {
+            transform: scale(1.06);
+            background-color: white;
+            margin-top: 40px;
+            transition: 0.25s;
+          }
     
     
     
+    .botonPrecios:hover{
+        background-color: #ce0054;
+    }
+    }
+    }
+    /* Fin página Precios */
+
+    /* Inicio página Contacto */
+
     
-    
-   
-    
-    
-    
-   
+
+    /* Fin página Contacto */
