@@ -295,14 +295,14 @@ footer {
     margin: 40px;
     padding: 15px 25px 15px 25px;
     border-radius: 20px; }
-    #servicios .servicios1 .fondoBlanco1 {
+    #servicios .servicios1 .fondoBlanco1, #servicios .servicios1 .PreciosConsultaIndividual {
       background-color: white;
       margin-top: 40px; }
-      #servicios .servicios1 .fondoBlanco1 .imagenServicios {
+      #servicios .servicios1 .fondoBlanco1 .imagenServicios, #servicios .servicios1 .PreciosConsultaIndividual .imagenServicios {
         margin-right: 15px;
         margin-left: 15px;
         border-radius: 20px; }
-      #servicios .servicios1 .fondoBlanco1 .serviciosTitulo {
+      #servicios .servicios1 .fondoBlanco1 .serviciosTitulo, #servicios .servicios1 .PreciosConsultaIndividual .serviciosTitulo {
         font-size: 16px;
         max-width: 300px;
         margin: 30px 20px 30px 20px;
@@ -311,7 +311,7 @@ footer {
         font-family: poppins;
         line-height: 1.5em;
         text-align: center; }
-      #servicios .servicios1 .fondoBlanco1 .serviciosTexto {
+      #servicios .servicios1 .fondoBlanco1 .serviciosTexto, #servicios .servicios1 .PreciosConsultaIndividual .serviciosTexto {
         width: 300px;
         font-size: 1.7em;
         color: #666666;
@@ -338,8 +338,8 @@ footer {
     #servicios .servicios1 .PreciosConsultaIndividual {
       border: #777777 2px solid;
       height: 600px;
-      background-color: white;
-      margin-top: 40px; }
+      margin-top: 40px;
+      background-color: #7ddde3; }
       #servicios .servicios1 .PreciosConsultaIndividual .serviciosTitulo {
         font-size: 16px;
         max-width: 300px;
@@ -368,7 +368,7 @@ footer {
         line-height: 1.5em; }
       #servicios .servicios1 .PreciosConsultaIndividual .botonPrecios1 {
         text-align: center; }
-        #servicios .servicios1 .PreciosConsultaIndividual .botonPrecios1 .botonPrecios {
+        #servicios .servicios1 .PreciosConsultaIndividual .botonPrecios1 .botonPrecios, #servicios .servicios1 .PreciosConsultaIndividual .botonPrecios1 .botonPrecios1 {
           text-align: center;
           background: #047798;
           border: none;
@@ -380,21 +380,35 @@ footer {
           border-radius: 20px;
           text-transform: uppercase;
           letter-spacing: 0.1em; }
-      #servicios .servicios1 .PreciosConsultaIndividual .PreciosConsultaIndividual {
-        border: #777777 2px solid;
-        height: 600px;
-        margin-top: 40px;
-        background-color: #7ddde3; }
-        #servicios .servicios1 .PreciosConsultaIndividual .PreciosConsultaIndividual .serviciosTitulo {
-          font-size: 16px;
+      #servicios .servicios1 .PreciosConsultaIndividual .serviciosTitulo {
+        font-size: 16px;
+        max-width: 300px;
+        margin: 30px 20px 30px 20px;
+        color: #047798;
+        letter-spacing: 0.05em;
+        font-family: poppins;
+        line-height: 1.5em;
+        text-align: center; }
+      #servicios .servicios1 .PreciosConsultaIndividual .precio {
+        font-size: 50px;
+        max-width: 300px;
+        margin: 20px 20px 20px 20px;
+        color: #ce0054;
+        font-family: poppins;
+        line-height: 1.5em;
+        text-align: center;
+        font-weight: 400; }
+        #servicios .servicios1 .PreciosConsultaIndividual .precio .precioAnterior {
+          font-size: 20px;
           max-width: 300px;
-          margin: 30px 20px 30px 20px;
-          color: #047798;
+          color: #ce0054;
           letter-spacing: 0.05em;
           font-family: poppins;
           line-height: 1.5em;
-          text-align: center; }
-        #servicios .servicios1 .PreciosConsultaIndividual .PreciosConsultaIndividual .precio {
+          text-align: center;
+          font-weight: 400;
+          text-decoration: line-through; }
+        #servicios .servicios1 .PreciosConsultaIndividual .precio .precio {
           font-size: 50px;
           max-width: 300px;
           margin: 20px 20px 20px 20px;
@@ -403,70 +417,6 @@ footer {
           line-height: 1.5em;
           text-align: center;
           font-weight: 400; }
-          #servicios .servicios1 .PreciosConsultaIndividual .PreciosConsultaIndividual .precio .precioAnterior {
-            font-size: 20px;
-            max-width: 300px;
-            color: #ce0054;
-            letter-spacing: 0.05em;
-            font-family: poppins;
-            line-height: 1.5em;
-            text-align: center;
-            font-weight: 400;
-            text-decoration: line-through; }
-          #servicios .servicios1 .PreciosConsultaIndividual .PreciosConsultaIndividual .precio .precio {
-            font-size: 50px;
-            max-width: 300px;
-            margin: 20px 20px 20px 20px;
-            color: #ce0054;
-            font-family: poppins;
-            line-height: 1.5em;
-            text-align: center;
-            font-weight: 400; }
-        #servicios .servicios1 .PreciosConsultaIndividual .PreciosConsultaIndividual .preciosTexto {
-          width: 200px;
-          font-size: 1.7em;
-          color: #666666;
-          margin: 30px 20px 30px 40px;
-          letter-spacing: 0.05em;
-          font-family: Poppins;
-          line-height: 1.5em; }
-        #servicios .servicios1 .PreciosConsultaIndividual .PreciosConsultaIndividual .botonPrecios1 {
-          text-align: center; }
-          #servicios .servicios1 .PreciosConsultaIndividual .PreciosConsultaIndividual .botonPrecios1 .botonPrecios {
-            text-align: center;
-            background: #047798;
-            border: none;
-            padding: 12px;
-            color: white;
-            margin: 16px 0;
-            font-size: 20px;
-            font-weight: 600;
-            border-radius: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em; }
-    #servicios .servicios1 .PreciosConsultaIndividual {
-      border: #777777 2px solid;
-      height: 600px;
-      background-color: white;
-      margin-top: 40px; }
-      #servicios .servicios1 .PreciosConsultaIndividual .serviciosTitulo {
-        font-size: 16px;
-        max-width: 300px;
-        margin: 30px 20px 30px 20px;
-        color: #047798;
-        letter-spacing: 0.05em;
-        font-family: poppins;
-        line-height: 1.5em;
-        text-align: center; }
-      #servicios .servicios1 .PreciosConsultaIndividual .precio {
-        font-size: 50px;
-        max-width: 300px;
-        margin: 20px 20px 20px 20px;
-        color: #ce0054;
-        font-family: poppins;
-        line-height: 1.5em;
-        text-align: center;
-        font-weight: 400; }
       #servicios .servicios1 .PreciosConsultaIndividual .preciosTexto {
         width: 200px;
         font-size: 1.7em;
@@ -477,37 +427,56 @@ footer {
         line-height: 1.5em; }
       #servicios .servicios1 .PreciosConsultaIndividual .botonPrecios1 {
         text-align: center; }
-        #servicios .servicios1 .PreciosConsultaIndividual .botonPrecios1 .botonPrecios {
-          text-align: center;
-          background: #047798;
-          border: none;
-          padding: 12px;
-          color: white;
-          margin: 16px 0;
-          font-size: 20px;
-          font-weight: 600;
-          border-radius: 20px;
-          text-transform: uppercase;
-          letter-spacing: 0.1em; }
-        #servicios .servicios1 .PreciosConsultaIndividual .botonPrecios1 .botonPrecios:hover {
-          background-color: #ce0054; }
-    #servicios .servicios1 .resaltar {
-      background-color: #7ddde3; }
-      #servicios .servicios1 .resaltar .precioAnterior {
-        font-size: 20px;
-        max-width: 300px;
-        color: #ce0054;
-        letter-spacing: 0.05em;
-        font-family: poppins;
-        line-height: 1.5em;
-        text-align: center;
-        font-weight: 400;
-        text-decoration: line-through; }
-    #servicios .servicios1 .fondoBlanco:hover {
-      transform: scale(1.06);
-      background-color: white;
-      margin-top: 40px;
-      transition: 0.25s; }
+  #servicios .PreciosConsultaIndividual, #servicios .servicios1 .PreciosConsultaIndividual {
+    border: #777777 2px solid;
+    height: 600px; }
+    #servicios .PreciosConsultaIndividual .serviciosTitulo {
+      font-size: 16px;
+      max-width: 300px;
+      margin: 30px 20px 30px 20px;
+      color: #047798;
+      letter-spacing: 0.05em;
+      font-family: poppins;
+      line-height: 1.5em;
+      text-align: center; }
+    #servicios .PreciosConsultaIndividual .precio {
+      font-size: 50px;
+      max-width: 300px;
+      margin: 20px 20px 20px 20px;
+      color: #ce0054;
+      font-family: poppins;
+      line-height: 1.5em;
+      text-align: center;
+      font-weight: 400; }
+    #servicios .PreciosConsultaIndividual .preciosTexto {
+      width: 200px;
+      font-size: 1.7em;
+      color: #666666;
+      margin: 30px 20px 30px 40px;
+      letter-spacing: 0.05em;
+      font-family: Poppins;
+      line-height: 1.5em; }
+    #servicios .PreciosConsultaIndividual .botonPrecios1 {
+      text-align: center; }
+      #servicios .PreciosConsultaIndividual .botonPrecios1 .botonPrecios:hover, #servicios .PreciosConsultaIndividual .botonPrecios1 .botonPrecios1:hover {
+        background-color: #ce0054; }
+  #servicios .resaltar {
+    background-color: #7ddde3; }
+    #servicios .resaltar .precioAnterior {
+      font-size: 20px;
+      max-width: 300px;
+      color: #ce0054;
+      letter-spacing: 0.05em;
+      font-family: poppins;
+      line-height: 1.5em;
+      text-align: center;
+      font-weight: 400;
+      text-decoration: line-through; }
+  #servicios .fondoBlanco:hover {
+    transform: scale(1.06);
+    background-color: white;
+    margin-top: 40px;
+    transition: 0.25s; }
 
 /* Fin página Precios */
 /* Inicio página Contacto */
@@ -542,7 +511,7 @@ footer {
         height: 30px; }
       #contenedor-formulario .conversemos .fondoFormulario .btn {
         background-color: #047798 !important;
-        font: color white;
+        font: white;
         border-radius: 0.8rem; }
   #contenedor-formulario .form-label {
     font-size: 1.7rem;

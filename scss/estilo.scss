@@ -271,9 +271,9 @@
         display:flex;
         justify-content: center;
         flex-wrap: wrap;
-        background-color: #f7f9fc;
+        background-color: $color-fondo;
         .servicios1 {
-            background-color: white;
+            background-color: $color-blanco;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -281,7 +281,7 @@
             padding: 15px 25px 15px 25px;
             border-radius: 20px;
             .fondoBlanco1 {
-                background-color: white;
+                background-color: $color-blanco;
                 margin-top: 40px;
                 .imagenServicios {
                     margin-right: 15px;
@@ -292,7 +292,7 @@
                     font-size: 16px;
                     max-width: 300px;
                     margin: 30px 20px 30px 20px;
-                    color: #047798;
+                    color: $color-azul;
                     letter-spacing: 0.05em;
                     font-family: poppins;
                     line-height: 1.5em;
@@ -302,7 +302,7 @@
                 .serviciosTexto {
                     width: 300px;
                     font-size: 1.7em;
-                    color: #666666;
+                    color: $color-fuente-gris;
                     margin: 30px 20px 30px 20px;
                     letter-spacing: 0.05em;
                     font-family: Poppins;
@@ -319,9 +319,9 @@
         display:flex;
         justify-content: center;
         flex-wrap: wrap;
-        background-color: #f7f9fc;
+        background-color: $color-fondo;
         .servicios1 {
-            background-color: white;
+            background-color: $color-blanco;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -331,13 +331,12 @@
             .PreciosConsultaIndividual {
                 border: #777777 2px solid;
                 height: 600px;
-                background-color: white;
-                margin-top: 40px;
+                @extend .fondoBlanco1;
                 .serviciosTitulo {
                     font-size: 16px;
                     max-width: 300px;
                     margin: 30px 20px 30px 20px;
-                    color: #047798;
+                    color: $color-azul;
                     letter-spacing: 0.05em;
                     font-family: poppins;
                     line-height: 1.5em;
@@ -347,7 +346,7 @@
                     font-size: 50px;
                     max-width: 300px;
                     margin: 20px 20px 20px 20px;
-                    color: #ce0054;
+                    color: $color-guinda;
                     font-family: poppins;
                     line-height: 1.5em;
                     text-align: center;
@@ -356,7 +355,7 @@
                 .preciosTexto {
                     width: 200px;
                     font-size: 1.7em;
-                    color: #666666;
+                    color: $color-fuente-gris;
                     margin: 30px 20px 30px 40px;
                     letter-spacing: 0.05em;
                     font-family: Poppins;
@@ -366,10 +365,10 @@
                     text-align: center;
                     .botonPrecios {
                         text-align: center;
-                        background: #047798;
+                        background: $color-azul;
                         border: none;
                         padding: 12px;
-                        color: white;
+                        color: $color-blanco;
                         margin: 16px 0;
                         font-size: 20px;
                         font-weight: 600;
@@ -378,16 +377,14 @@
                         letter-spacing: 0.1em;
                       }
                 }
-            .PreciosConsultaIndividual {
-                    border: #777777 2px solid;
-                    height: 600px;
+            @extend .PreciosConsultaIndividual;
                     margin-top: 40px;
                     background-color: #7ddde3;
                     .serviciosTitulo {
                         font-size: 16px;
                         max-width: 300px;
                         margin: 30px 20px 30px 20px;
-                        color: #047798;
+                        color: $color-azul;
                         letter-spacing: 0.05em;
                         font-family: poppins;
                         line-height: 1.5em;
@@ -397,7 +394,7 @@
                         font-size: 50px;
                         max-width: 300px;
                         margin: 20px 20px 20px 20px;
-                        color: #ce0054;
+                        color: $color-guinda;
                         font-family: poppins;
                         line-height: 1.5em;
                         text-align: center;
@@ -405,7 +402,7 @@
                         .precioAnterior {
                             font-size: 20px;
                             max-width: 300px;
-                            color: #ce0054;
+                            color: $color-guinda;
                             letter-spacing: 0.05em;
                             font-family: poppins;
                             line-height: 1.5em;
@@ -417,7 +414,7 @@
                             font-size: 50px;
                             max-width: 300px;
                             margin: 20px 20px 20px 20px;
-                            color: #ce0054;
+                            color: $color-guinda;
                             font-family: poppins;
                             line-height: 1.5em;
                             text-align: center;
@@ -427,7 +424,7 @@
                     .preciosTexto {
                         width: 200px;
                         font-size: 1.7em;
-                        color: #666666;
+                        color: $color-fuente-gris;
                         margin: 30px 20px 30px 40px;
                         letter-spacing: 0.05em;
                         font-family: Poppins;
@@ -435,19 +432,7 @@
                     }
                     .botonPrecios1 {
                         text-align: center;
-                        .botonPrecios {
-                            text-align: center;
-                            background: #047798;
-                            border: none;
-                            padding: 12px;
-                            color: white;
-                            margin: 16px 0;
-                            font-size: 20px;
-                            font-weight: 600;
-                            border-radius: 20px;
-                            text-transform: uppercase;
-                            letter-spacing: 0.1em;
-                          }
+                        @extend .botonPrecios;
                     }
                      
                 }
@@ -457,13 +442,12 @@
             .PreciosConsultaIndividual {
                 border: #777777 2px solid;
                 height: 600px;
-                background-color: white;
-                margin-top: 40px;
+                @extend .fondoBlanco1;
                 .serviciosTitulo {
                     font-size: 16px;
                     max-width: 300px;
                     margin: 30px 20px 30px 20px;
-                    color: #047798;
+                    color: $color-azul;
                     letter-spacing: 0.05em;
                     font-family: poppins;
                     line-height: 1.5em;
@@ -473,7 +457,7 @@
                     font-size: 50px;
                     max-width: 300px;
                     margin: 20px 20px 20px 20px;
-                    color: #ce0054;
+                    color: $color-guinda;
                     font-family: poppins;
                     line-height: 1.5em;
                     text-align: center;
@@ -482,7 +466,7 @@
                 .preciosTexto {
                     width: 200px;
                     font-size: 1.7em;
-                    color: #666666;
+                    color: $color-fuente-gris;
                     margin: 30px 20px 30px 40px;
                     letter-spacing: 0.05em;
                     font-family: Poppins;
@@ -490,21 +474,9 @@
                 }
                 .botonPrecios1 {
                     text-align: center;
-                    .botonPrecios {
-                        text-align: center;
-                        background: #047798;
-                        border: none;
-                        padding: 12px;
-                        color: white;
-                        margin: 16px 0;
-                        font-size: 20px;
-                        font-weight: 600;
-                        border-radius: 20px;
-                        text-transform: uppercase;
-                        letter-spacing: 0.1em;
-                      }
+                    @extend .botonPrecios;
                       .botonPrecios:hover{
-                        background-color: #ce0054;
+                        background-color: $color-guinda;
                     }
                 }
             }
@@ -514,7 +486,7 @@
         .precioAnterior {
             font-size: 20px;
             max-width: 300px;
-            color: #ce0054;
+            color: $color-guinda;
             letter-spacing: 0.05em;
             font-family: poppins;
             line-height: 1.5em;
@@ -526,12 +498,12 @@
     
     .fondoBlanco:hover {
             transform: scale(1.06);
-            background-color: white;
+            background-color: $color-blanco;
             margin-top: 40px;
             transition: 0.25s;
           }
     }
-    }
+    
     /* Fin página Precios */
 
     /* Inicio página Contacto */
@@ -557,21 +529,21 @@
                 margin: 3rem 0;
                 text-align: center;
                 .fondoFormulario {
-                    background-color: white;
+                    background-color: $color-blanco;
                     padding: 2rem;
                     border-radius: 15px;
                     border: #047798 0.5px solid;
                     .form-label {
                         font-size: 1.7rem;
                         font-family: Poppins 200;
-                        color: #047798;
+                        color: $color-azul;
                     }
                     .input-lg {
                         height: 30px;
                     }
                     .btn {
-                        background-color: #047798 !important;
-                        font: color white;
+                        background-color: $color-azul !important;
+                        font: $color-blanco;
                         border-radius: 0.8rem;
                         }
                 }
@@ -579,7 +551,7 @@
             .form-label {
                 font-size: 1.7rem;
                 font-family: Poppins 200;
-                color: #047798;
+                color: $color-azul;
             }    
     }
 
