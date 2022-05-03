@@ -279,3 +279,43 @@ footer {
 
 /* Fin Contenido */
 /* Fin página Sobre Mi */
+/* Inicio página Servicios */
+#servicios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f7f9fc; }
+  #servicios .servicios1 {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 20px; }
+    #servicios .servicios1 .fondoBlanco1 {
+      background-color: white;
+      margin-top: 40px; }
+      #servicios .servicios1 .fondoBlanco1 .imagenServicios {
+        margin-right: 15px;
+        margin-left: 15px;
+        border-radius: 20px; }
+      #servicios .servicios1 .fondoBlanco1 .serviciosTitulo {
+        font-size: 16px;
+        max-width: 300px;
+        margin: 30px 20px 30px 20px;
+        color: #047798;
+        letter-spacing: 0.05em;
+        font-family: poppins;
+        line-height: 1.5em;
+        text-align: center; }
+      #servicios .servicios1 .fondoBlanco1 .serviciosTexto {
+        width: 300px;
+        font-size: 1.7em;
+        color: #666666;
+        margin: 30px 20px 30px 20px;
+        letter-spacing: 0.05em;
+        font-family: Poppins;
+        line-height: 1.5em; }
+
+/* Fin página Servicios */
