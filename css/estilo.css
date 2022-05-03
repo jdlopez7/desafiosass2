@@ -140,6 +140,28 @@ footer {
     footer .columna3Footer .fa-brands {
       color: #047798;
       padding: 5px 0 40px 0; }
+  @media only screen and (min-width: 0px) and (max-width: 768px) {
+    footer .columnas {
+      grid-template-columns: 100%;
+      display: grid;
+      grid-template-areas: "columna1Footer" "columna2Footer1" "columna2Footer" "columna3Footer"; }
+      footer .columnas .columna1Footer__logo {
+        margin-bottom: -20px;
+        max-width: 125px; }
+      footer .columnas .columna1Footer__mision {
+        font-size: 1.5rem;
+        line-height: 1.4em;
+        text-align: center;
+        padding: 20px 60px 0px 60px; } }
+  @media only screen and (min-width: 1024px) and (max-width: 2400px) {
+    footer .columnas {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 15px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    footer .columna1Footer__logo {
+      margin-bottom: -20px;
+      max-width: 125px; } }
 
 .copy {
   text-align: center;
@@ -168,11 +190,6 @@ footer {
     margin: 40px 15px 0px 15px; }
   #ventajas {
     padding-bottom: 40px; }
-  /* Footer */
-  .columnas {
-    grid-template-columns: 100%;
-    display: grid;
-    grid-template-areas: "columna1Footer" "columna2Footer1" "columna2Footer" "columna3Footer"; }
   .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2804, 119, 152, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
   .navbar-light .navbar-toggler {
@@ -180,15 +197,7 @@ footer {
   #menu a, button {
     font-size: 18px !important;
     font-weight: 600;
-    padding-left: 10px; }
-  .columna1Footer__logo {
-    margin-bottom: -20px;
-    max-width: 125px; }
-  .columna1Footer__mision {
-    font-size: 1.5rem;
-    line-height: 1.4em;
-    text-align: center;
-    padding: 20px 60px 0px 60px; } }
+    padding-left: 10px; } }
 
 /* Fin Media Queries para pantallas SM max 768 */
 /* Inicio Media Queries para pantallas desde 1024px a 2400px */
@@ -205,19 +214,12 @@ footer {
   .container {
     max-width: 100%; }
   .ventajas1 {
-    height: 250px; }
-  .columnas {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 15px; } }
+    height: 250px; } }
 
 /* Inicio Media Queries para pantallas medias entre 768px y 1024px */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .ventajas1 {
     height: 270px; }
-  .columna1Footer__logo {
-    margin-bottom: -20px;
-    max-width: 125px; }
   #ventajas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -487,6 +489,8 @@ footer {
           border-radius: 20px;
           text-transform: uppercase;
           letter-spacing: 0.1em; }
+        #servicios .servicios1 .PreciosConsultaIndividual .botonPrecios1 .botonPrecios:hover {
+          background-color: #ce0054; }
     #servicios .servicios1 .resaltar {
       background-color: #7ddde3; }
       #servicios .servicios1 .resaltar .precioAnterior {
@@ -504,9 +508,45 @@ footer {
       background-color: white;
       margin-top: 40px;
       transition: 0.25s; }
-    #servicios .servicios1 .botonPrecios:hover {
-      background-color: #ce0054; }
 
 /* Fin página Precios */
 /* Inicio página Contacto */
+#contenedor-formulario {
+  background: #fbfafa;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 2rem; }
+  #contenedor-formulario .imagenContacto {
+    text-align: center;
+    margin: 0 30px; }
+    #contenedor-formulario .imagenContacto .img-fluid {
+      border-radius: 15px; }
+  #contenedor-formulario .conversemos {
+    color: #047798;
+    margin: 3rem 0;
+    text-align: center; }
+    #contenedor-formulario .conversemos .fondoFormulario {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 15px;
+      border: #047798 0.5px solid; }
+      #contenedor-formulario .conversemos .fondoFormulario .form-label {
+        font-size: 1.7rem;
+        font-family: Poppins 200;
+        color: #047798; }
+      #contenedor-formulario .conversemos .fondoFormulario .input-lg {
+        height: 30px; }
+      #contenedor-formulario .conversemos .fondoFormulario .btn {
+        background-color: #047798 !important;
+        font: color white;
+        border-radius: 0.8rem; }
+  #contenedor-formulario .form-label {
+    font-size: 1.7rem;
+    font-family: Poppins 200;
+    color: #047798; }
+
 /* Fin página Contacto */

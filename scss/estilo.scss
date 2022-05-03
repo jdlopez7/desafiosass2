@@ -131,18 +131,6 @@
         #ventajas {
             padding-bottom: 40px;
         }
-    
-        /* Footer */
-    
-        .columnas {
-                grid-template-columns: 100%;
-                display: grid;
-                grid-template-areas:
-                    "columna1Footer"
-                    "columna2Footer1"
-                    "columna2Footer"
-                    "columna3Footer";
-          }
         
         .navbar-light .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2804, 119, 152, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -156,19 +144,7 @@
              font-weight: 600;
              padding-left: 10px;
           }
-    
-        .columna1Footer__logo {
-            margin-bottom: -20px;
-            max-width: 125px;
-        }
-    
-        .columna1Footer__mision {
-            font-size: 1.5rem;
-            line-height: 1.4em;
-            text-align: center;
-            padding: 20px 60px 0px 60px;
-        }
-    
+
         }
     /* Fin Media Queries para pantallas SM max 768 */
     
@@ -196,12 +172,6 @@
             height: 250px;
         }
     
-        .columnas {
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-bottom: 15px;
-        }
-    
     }
     
     /* Inicio Media Queries para pantallas medias entre 768px y 1024px */
@@ -210,11 +180,6 @@
     
         .ventajas1 {
             height: 270px;
-        }
-    
-        .columna1Footer__logo {
-            margin-bottom: -20px;
-            max-width: 125px;
         }
         
         #ventajas {
@@ -538,6 +503,9 @@
                         text-transform: uppercase;
                         letter-spacing: 0.1em;
                       }
+                      .botonPrecios:hover{
+                        background-color: #ce0054;
+                    }
                 }
             }
 
@@ -562,18 +530,57 @@
             margin-top: 40px;
             transition: 0.25s;
           }
-    
-    
-    
-    .botonPrecios:hover{
-        background-color: #ce0054;
-    }
     }
     }
     /* Fin página Precios */
 
     /* Inicio página Contacto */
 
-    
+    #contenedor-formulario{
+        background: #fbfafa;
+        border-radius:10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        margin: 2rem;
+        .imagenContacto {
+            text-align: center;
+            margin: 0 30px;
+            .img-fluid {
+                border-radius: 15px;
+            }
+            }
+        .conversemos {
+                color: #047798;
+                margin: 3rem 0;
+                text-align: center;
+                .fondoFormulario {
+                    background-color: white;
+                    padding: 2rem;
+                    border-radius: 15px;
+                    border: #047798 0.5px solid;
+                    .form-label {
+                        font-size: 1.7rem;
+                        font-family: Poppins 200;
+                        color: #047798;
+                    }
+                    .input-lg {
+                        height: 30px;
+                    }
+                    .btn {
+                        background-color: #047798 !important;
+                        font: color white;
+                        border-radius: 0.8rem;
+                        }
+                }
+            }
+            .form-label {
+                font-size: 1.7rem;
+                font-family: Poppins 200;
+                color: #047798;
+            }    
+    }
 
     /* Fin página Contacto */
