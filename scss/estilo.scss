@@ -145,6 +145,40 @@
              padding-left: 10px;
           }
 
+        #contenedor-formulario{
+            display: block !important;
+            align-items: center;
+            grid-template-columns: 100%;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .sobremi {
+            display: block !important;
+            padding: 0;
+            margin: 0;
+            grid-template-columns: 100%;
+            text-align: center;
+            grid-template-areas: 
+            "textoSobremipadding"
+            "imagenSobreMi";
+        }
+        
+        .textoSobremipadding {
+            grid-area: textosobremipadding;
+        }
+        .imagenSobreMi {
+            grid-area: imagenSobreMi;
+            grid-template-columns: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .imagenJuan {
+            margin: 0;
+            width: 250px;
+            padding: 0;
+        }
+
         }
     /* Fin Media Queries para pantallas SM max 768 */
     
@@ -161,7 +195,7 @@
             @include tipodisplay();
         }
 
-        .titulosH4 {
+        .titulosH3 {
             font-size: 2rem;
             line-height: 1.2;
         }
@@ -202,6 +236,33 @@
         .navbar-light .navbar-toggler {
             border-color: $color-azul;
           }
+
+        .imagenContacto {
+            text-align: center;
+        }
+        #contenedor-formulario{
+            display: block !important;
+            align-items: center;
+            grid-template-columns: 100%;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .sobremi {
+            display: block !important;
+            padding: 0;
+            margin: 0;
+            grid-template-columns: 100%;
+            text-align: center;
+            grid-template-areas: 
+            "textoSobremipadding"
+            "imagenSobreMi";
+        }
+        
+        .textoSobremipadding {
+            grid-area: textosobremipadding;
+        }
+       
     }
  
     /* Fin Index */
@@ -553,19 +614,22 @@
                     }
                     .input-lg {
                         height: 30px;
-                    }
-                    .btn {
-                        background-color: $color-azul !important;
-                        font: $color-blanco;
-                        border-radius: 0.8rem;
-                        }
+                    } 
+                    
                 }
             }
             .form-label {
                 font-size: 1.7rem;
                 font-family: Poppins 200;
                 color: $color-azul;
-            }    
+            } 
+            .btn {
+                background-color: $color-azul !important;
+                font: $color-blanco;
+                font-size: 2rem;
+                border-radius: 0.8rem;
+                }  
+             
     }
 
     /* Fin página Contacto */

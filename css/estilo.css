@@ -197,7 +197,31 @@ footer {
   #menu a, button {
     font-size: 18px !important;
     font-weight: 600;
-    padding-left: 10px; } }
+    padding-left: 10px; }
+  #contenedor-formulario {
+    display: block !important;
+    align-items: center;
+    grid-template-columns: 100%;
+    justify-content: center;
+    margin: 0; }
+  .sobremi {
+    display: block !important;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 100%;
+    text-align: center;
+    grid-template-areas: "textoSobremipadding" "imagenSobreMi"; }
+  .textoSobremipadding {
+    grid-area: textosobremipadding; }
+  .imagenSobreMi {
+    grid-area: imagenSobreMi;
+    grid-template-columns: 100%;
+    padding: 0;
+    margin: 0; }
+  .imagenJuan {
+    margin: 0;
+    width: 250px;
+    padding: 0; } }
 
 /* Fin Media Queries para pantallas SM max 768 */
 /* Inicio Media Queries para pantallas desde 1024px a 2400px */
@@ -206,7 +230,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center; }
-  .titulosH4 {
+  .titulosH3 {
     font-size: 2rem;
     line-height: 1.2; }
   .col-md-4 {
@@ -229,7 +253,24 @@ footer {
   .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2804, 119, 152, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
   .navbar-light .navbar-toggler {
-    border-color: #047798; } }
+    border-color: #047798; }
+  .imagenContacto {
+    text-align: center; }
+  #contenedor-formulario {
+    display: block !important;
+    align-items: center;
+    grid-template-columns: 100%;
+    justify-content: center;
+    margin: 0; }
+  .sobremi {
+    display: block !important;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 100%;
+    text-align: center;
+    grid-template-areas: "textoSobremipadding" "imagenSobreMi"; }
+  .textoSobremipadding {
+    grid-area: textosobremipadding; } }
 
 /* Fin Index */
 /* Inicio Página Sobre Mi */
@@ -509,13 +550,14 @@ footer {
         color: #047798; }
       #contenedor-formulario .conversemos .fondoFormulario .input-lg {
         height: 30px; }
-      #contenedor-formulario .conversemos .fondoFormulario .btn {
-        background-color: #047798 !important;
-        font: white;
-        border-radius: 0.8rem; }
   #contenedor-formulario .form-label {
     font-size: 1.7rem;
     font-family: Poppins 200;
     color: #047798; }
+  #contenedor-formulario .btn {
+    background-color: #047798 !important;
+    font: white;
+    font-size: 2rem;
+    border-radius: 0.8rem; }
 
 /* Fin página Contacto */
